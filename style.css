@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(27, 26, 26);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 2fr 4fr 1fr;
+  position: relative;
+}
+.left-top-left {
+ 
+  padding: 15px;
+}
+.right-top-left {
+  
+  text-align: right;
+  padding: 15px;
+}
+.leftcenter {
+ 
+  grid-column: 1/3;
+  padding: 5px;
+}
+.leftbottom {
+  
+  grid-column: 1/3;
+  padding: 8px;
+}
+.right {
+
+  grid-row: 1/4;
+  grid-column: 3;
+  position: relative;
+}
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.right-top-left h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: rgb(27, 26, 26);
+}
+.right-top-left h4{
+    display: none;.
+}
+.right-top-left h5 {
+  font-weight: 500;
+  color: rgb(27, 26, 26);
+}
+.leftcenter h1 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 6rem;
+}
+.leftcenter h1:nth-child(2n) {
+  text-align: center;
+}
+.leftcenter h1:nth-child(odd) {
+  margin-left: 40px;
+}
+.leftbottom p {
+  font-weight: 300;
+}
+.right img {
+  height: 100%;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform:translate(-50%, -50%);
+}
+.arrow i{
+    font-size: 50px;
+background-color: orangered;
+border-radius: 50%;
+}
+@media  (max-width: 600px){
+.main {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 30% 10% 50%;
+}
+.right {
+  grid-row: 4;
+  grid-column: 1/4;
+}
+.leftcenter {
+  padding: 5px;
+  grid-row: 2;
+  
+}
+.leftcenter h1 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.arrow{
+    position: absolute;
+    top: 47%;
+    left: 48%;
+    transform:translate(-50%, -50%);
+    transform: rotate(90deg);
+}
+.right-top-left h3 {
+    display: none;
+  
+}
+.right-top-left h5 {
+
+  display: none;
+}
+.right img {
+  height: 100%;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}
+.right-top-left h4{
+    display: initial;
+    font-size: 30px;
+}
+}
